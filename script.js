@@ -75,6 +75,7 @@ let next = document.querySelector(".next");
 let counter = 0;
 
 let listen = next.addEventListener("click", (e) => {
+  e.target.preventDefault()
   nameFav.innerText = favPokemon[counter].name;
   imagefavPoke.src = favPokemon[counter].sprites.front_default;
   hpFav.innerHTML = `HP ${favPokemon[counter].stats[0].base_stat}`;
@@ -101,6 +102,7 @@ let previous = document.querySelector(".previous");
 
 // let counter = 6;
 previous.addEventListener("click", (e) => {
+  e.target.preventDefault();
   if (counter <= 7) {
     counter--;
   }
