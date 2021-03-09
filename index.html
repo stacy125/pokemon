@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Number One Grandson's Favorite Pokemon</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section>
+            <header>My Number One Grandson's Favorite Pokemon</header>
+            <div class="favorite-poke-container">
+                <div class="favorites">
+                    <div class="fav-img">
+                        <img id="update-fav-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="image of your Favorite pokemon">
+                    </div>
+                    <div class="displayFavPokemon">
+                    <div class="fav-name" id="update-fav-name">Charmander</div>
+                    <hr class="separator">
+                        <div class="fav-stats">
+                            <span class="hp" id="update-fav-hp">HP 39</span>
+                            <span class="xp" id="update-fav-xp">XP 62</span>
+                        </div>
+                    </div>
+                    <div class="fav-button-container">
+                        <button class="fav-btn-transfer">TRANSFER</button>
+                    </div>
+                    <div class="favorite-container">
+                        <div class="favorie-content" style="min-width: 42%;">
+                            <small class="text-muted">Type</small>
+                            <p class="fav-atributes" id="update-fav-attributes">Blaze / Solar Power</p>
+                        </div>
+                        <div class="fav-attribute-content">
+                            <small class="text-muted">Weight</small>
+                            <p class="fav-weight" id="update-fav-weight">8.5kg</p>
+                        </div>
+                        <div class="fav-attribute-content">
+                            <small class="text-muted">Height</small>
+                            <p class="fav-height" id="update-fav-height">6.1cm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="#" class="previous round" id="next">&#8249;</a>
+        <a href="#" class="next round" id="previous">&#8250;</a>
+        <hr>
+        <section>
+            <div class="flex-container">
+                <div class="search-container">
+                    <input class="search" id="input" type="text" placeholder="Search by name"><button class="submit"
+                        type="submit"></button>
+                </div>
+                <div class="image-container">
+                    <img id="update-img" src="" alt="image of your pokemon">
+                </div>
+                <div class="displayPokemon">
+                    <div class="title-container">
+                        <h3 class="name text-center" id="update-name">Charmander</h3>
+                        <hr class="separator">
+                        <div class="stats text-center">
+                            <span class="first hp" id="update-hp">HP ?</span>
+                            <span class="xp" id="update-xp">XP ?</span>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn-transfer">TRANSFER</button>
+                    </div>
+                    <div class="attribute-container">
+                        <div class="attribute-content" style="min-width: 42%;">
+                            <small class="text-muted">Type</small>
+                            <p class="atributes" id="update-attributes">? / ?</p>
+                        </div>
+                        <div class="attribute-content">
+                            <small class="text-muted">Weight</small>
+                            <p class="weight" id="update-weight">?kg</p>
+                        </div>
+                        <div class="attribute-content">
+                            <small class="text-muted">Height</small>
+                            <p class="height" id="update-height">?cm</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+
+</html>

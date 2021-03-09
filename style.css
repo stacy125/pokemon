@@ -1,0 +1,140 @@
+*{
+    margin: 5px 5px 5px 5px;
+}
+
+body {
+    background-color: blanchedalmond;
+    width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    border: 5px solid darkblue;
+    background-color: darkcyan;
+    color: white;
+}
+
+.flex-container, .favorite-poke-container  {
+    display: flexbox;
+    border: black solid 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    background-color: darkblue;
+    color: #fff;
+    width: 300px;
+    margin: 50px 100px;
+}
+.image-container, .fav-img {
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 200px;
+    height: 200px;
+    z-index: 5px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: rgb(226, 81, 88);
+  color: black;
+}
+
+.previous {
+  background-color: #0d60a5;
+  color: white;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+  float: right;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+/* .favorites {
+    margin: 20px;
+    padding: 50px;
+} */
+/* 
+.fav-img { 
+     padding: 5px; 
+} */
+.search-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+    /* padding: 20px; */
+    width: 80px;
+}
+
+.submit {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px 25px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: chartreuse;
+    color: brown;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+input {
+    display: inline-block;
+    position: relative;
+    border: 2px solid  chartreuse;
+}
+
+.stats, .fav-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.height, .fav-height {
+    border: none;
+}
+
+
+.name, .fav-name {
+    text-align: center;
+}
+
+
+.attribute-container, .favorite-container {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.button-container, .fav-button-container {
+    text-align: center;
+}
+
+/* .displayPokemon div, .displayFavPokemon div {
+    margin: 20px 0;
+    padding: 0 10px;
+} */
+/* 
+.favorites, .displayFavPokemon {
+    display: flexbox;
+    border: black solid 2px;
+    background-color: rgb(65, 0, 139);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    text-align: center;
+    margin-right: 200px;
+    margin: 0 100px;
+} */
+
