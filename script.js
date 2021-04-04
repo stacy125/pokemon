@@ -39,6 +39,7 @@ async function fetchPokemon(pokemon) {
 let input = document.getElementById("input");
 let submit = document.querySelector(".submit");
 submit.addEventListener("click", () => fetchPokemon(input.value));
+submit.addEventListener("onTouch", () => fetchPokemon(input.value));
 console.log("hello");
 
 const favPokemon = [];
@@ -102,6 +103,59 @@ let previous = document.querySelector(".previous");
 
 // let counter = 6;
 previous.addEventListener("click", (e) => {
+  e.target.preventDefault();
+  if (counter <= 7) {
+    counter--;
+  }
+let listener = next.addEventListener("onTouch", (e) => {
+  e.target.preventDefault()
+  nameFav.innerText = favPokemon[counter].name;
+  imagefavPoke.src = favPokemon[counter].sprites.front_default;
+  hpFav.innerHTML = `HP ${favPokemon[counter].stats[0].base_stat}`;
+  xpFav.innerHTML = `XP ${favPokemon[counter].base_experience}`;
+  weightFav.innerHTML = `${favPokemon[counter].weight}kg`;
+  heightFav.innerText = `${favPokemon[counter].height}cm`;
+  console.log(favPokemon[counter].stats[0].base_stat);
+  console.log(favPokemon[counter]);
+  if (favPokemon[counter].types.length == 2) {
+
+      powersFav.innerHTML =
+        `${favPokemon[counter].types[0].type.name} / 
+        ${favPokemon[counter].types[1].type.name}`;
+    
+  } else {
+    powersFav.innerHTML = `${favPokemon[counter].types[0].type.name}`;
+  }
+
+  counter++;
+});
+
+let previous = document.querySelector(".previous");
+
+
+previous.addEventListener("click", (e) => {
+  e.target.preventDefault();
+  if (counter <= 7) {
+    counter--;
+  }
+
+  nameFav.innerText = favPokemon[counter].name;
+  imagefavPoke.src = favPokemon[counter].sprites.front_default;
+  hpFav.innerText = `HP ${favPokemon[counter].stats[0].base_stat}`;
+  xpFav.innerHTML = `XP ${favPokemon[counter].base_experience}`;
+  weightFav.innerHTML = `${favPokemon[counter].weight}kg`;
+  heightFav.innerText = `${favPokemon[counter].height}cm`;
+  // console.log(index);
+
+  if (favPokemon[counter].types.length == 2) {
+    powersFav.innerHTML =
+     ` ${favPokemon[counter].types[0].type.name} /
+      ${favPokemon[counter].types[1].type.name}`
+  } else {
+    powersFav.innerHTML = favPokemon[counter].types[0].type.name;
+  }
+});
+previous.addEventListener("onTouch", (e) => {
   e.target.preventDefault();
   if (counter <= 7) {
     counter--;
